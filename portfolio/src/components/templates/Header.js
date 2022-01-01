@@ -9,7 +9,8 @@ display: flex;
 justify-content: space-between;
 width: 100%;
 height: 79px;
-background-color: #F1F0F0;
+background-color: #F4F4F4;
+z-index: 5;
 `
 
 function Header() {

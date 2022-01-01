@@ -7,6 +7,7 @@ width: 100%;
 height: 906px;
 
 background: #FFFFFF;
+padding-top: 79px;
 `
 
 function Projects() {

@@ -7,6 +7,7 @@ width: 100%;
 height: 712px;
 
 background: #FFFFFF;
+padding-top: 79px;
 `
 
 function Archiving() {

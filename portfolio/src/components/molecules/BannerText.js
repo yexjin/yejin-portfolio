@@ -6,7 +6,7 @@ import SmallText from '../atoms/BannerSmallText'
 import Button from '../atoms/BannerButton'
 
 const Box = styled.div`
-margin-top: 192px;
+padding-top: 192px;
 margin-left: 200px;
 `
 
