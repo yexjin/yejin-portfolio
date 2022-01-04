@@ -8,7 +8,7 @@ font-family: Roboto;
 font-style: normal;
 font-weight: 500;
 font-size: 21px;
-line-height: 25px;
+line-height: 30px;
 text-align: center;
 
 color: #000000;
