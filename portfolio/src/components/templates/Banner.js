@@ -7,7 +7,7 @@ const Box = styled.div`
 display: flex;
 justify-content: space-between;
 height: 839px;
-padding-top: 79px;
+padding-top: px;
 padding-bottom: 79px;
 `
 

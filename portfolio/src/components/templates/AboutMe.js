@@ -8,7 +8,7 @@ import Text from '../atoms/AboutMeText'
 const Box = styled.div`
 width: 100%;
 height: 889px;
-padding-top: 30px;
+padding-top: 25px;
 
 background: #F4F4F4;
 `
@@ -17,7 +17,7 @@ display: flex;
 justify-content: space-between;
 margin-left: 190px;
 margin-right: 300px;
-margin-top: 60px;
+margin-top: 40px;
 `
 const Bar = styled.div`
 width: 205px;

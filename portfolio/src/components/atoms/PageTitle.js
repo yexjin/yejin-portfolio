@@ -8,7 +8,7 @@ margin-top: 49px;
 `
 
 const Bar = styled.div`
-width: 50px;
+width: 40px;
 height: 6px;
 
 background: #FBA2A2;
@@ -21,11 +21,19 @@ margin-top:-15px;
 
 font-family: Roboto;
 font-style: normal;
-font-weight: bold;
-font-size: 33px;
+font-weight: 600;
+font-size: 30px;
 line-height: 39px;
 
 color: #000000;
+`
+
+const SubText = styled.div`
+font-size: 15px;
+font-weight: 400;
+color: #000000;
+font-family: Roboto;
+font-style: normal;
 `
 
 function PageTitle({children}) {

@@ -11,8 +11,8 @@ width: 100px;
 
 font-family: Roboto;
 font-style: normal;
-font-weight: 500;
-font-size: 21px;
+font-weight: 600;
+font-size: 18px;
 line-height: 25px;
 
 color: #000000;
@@ -25,7 +25,7 @@ height: 25px;
 font-family: Roboto;
 font-style: normal;
 font-weight: 500;
-font-size: 21px;
+font-size: 20px;
 line-height: 25px;
 
 color: #000000;

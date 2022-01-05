@@ -4,7 +4,6 @@ import AboutMe from './templates/AboutMe'
 import Archiving from './templates/Archiving'
 import Skills from './templates/Skills'
 import Projects from './templates/Projects'
-import Activity from './templates/Activity'
 import Contact from './templates/Contact'
 import styled from 'styled-components'
 
@@ -28,9 +27,6 @@ function Page() {
             </div>
             <div id='Projects'>
                 <Projects />
-            </div>
-            <div id='Activity'>
-                <Activity />
             </div>
             <div id='Contact'>
                 <Contact />
