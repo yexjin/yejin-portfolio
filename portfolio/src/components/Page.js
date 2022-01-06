@@ -7,11 +7,13 @@ import Projects from './templates/Projects'
 import Contact from './templates/Contact'
 import styled from 'styled-components'
 
+
 const Box = styled.div`
 position: relative;
 `
 
 function Page() {
+
     return (
         <>
         <Box>
