@@ -15,11 +15,16 @@ padding-top: 20px;
 `
 
 const Boxes = styled.div`
-margin-top: 10px;
-margin-right: 20px;
-margin-left: 20px;
-display: flex;
-justify-content: space-evenly;
+width: 1035px;
+padding-top: 35px;
+margin: 0 auto;
+`
+
+const Bar = styled.div`
+margin-left: -30px;
+border: 1px solid #8B8888;
+margin-top: 50px;
+margin-bottom: 45px;
 `
 
 
@@ -30,10 +35,9 @@ function Skills() {
             <Boxes>
                 <Front />
                 <Back />
-                <div>
-                <Tool /> <br />
+                <Bar />
+                <Tool /> 
                 <Commu />
-                </div>
             </Boxes>
         </Box>
     )

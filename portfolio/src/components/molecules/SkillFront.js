@@ -1,35 +1,72 @@
 import React from 'react'
 import styled from 'styled-components'
-import Html from '../../image/frontend/htmlcssjs.png'
-import ReactIcon from '../../image/frontend/react.png'
-import Redux from '../../image/frontend/redux.png'
-import Axios from '../../image/frontend/axios.png'
+import { Progress } from 'reactstrap'
+import { Skills } from '../../data'
 
-const Box = styled.div`
-width: 300px;
-height: 554px;
-background: #FFFFFF;
+const Flex = styled.div`
+display: flex;
 `
 
-const Line = styled.div`
-padding-top: 40px;
-padding-left: 32px;
+const Name = styled.div`
+margin-left: 94px;
+margin-top: 5px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 29px;
 `
+
+const Percent = styled.div`
+margin-left: 20px;
+margin-top: 5px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+`
+
+const ProgressBox = styled.div`
+width: 554px;;
+margin-left: 37px;
+margin-top: 10px;
+margin-bottom: 18px;
+`
+
+const { front } = Skills();
 
 function SkillFront() {
+
     return (
-        <Box>
-            <Line>
-                <img src={Html} width="231px" height="107px" alt="htmlcssjs"/> <br />
-            </Line>
-            <Line>
-                <img src={ReactIcon} width="104px" height="114px" alt="리액트" />
-                <img src={Redux} width="104px" height="114px" alt="리덕스" /> <br />
-            </Line>
-            <Line>
-                <img src={Axios} width="200px" height="45px" alt="axios" /> 
-            </Line>
-        </Box>
+        <Flex> <div> 
+        {front.map(skill=>{
+            return(<Name>
+                {skill.name}
+                </Name>)
+        })}</div>
+        <div>
+            {front.map(skill=>{
+                return(<ProgressBox>
+                    <Progress
+                        animated
+                        color="dark"
+                        striped
+                        value={skill.progress}
+                    />
+                </ProgressBox>)
+            })}
+        </div>
+        <div>
+            <div>
+                {front.map(skill=>{
+                    return(<Percent>
+                        {skill.progress}%
+                    </Percent>)
+                })}
+            </div>
+        </div>
+        </Flex>
     )
 }
 
