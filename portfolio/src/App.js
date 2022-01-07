@@ -5,14 +5,13 @@ import Page from './components/Page';
 import ModalBox from './components/templates/ProjectModal'
 import { ModalContext } from "./context/modalContext";
 
-
 function App() {
   return (
   <>
   <ModalContext>
-    <Header />
-    <Page />
-    <ModalBox />
+      <Header />
+      <Page />
+      <ModalBox />
   </ModalContext>
   </>
   )

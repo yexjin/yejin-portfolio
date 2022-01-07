@@ -1,7 +1,8 @@
-import React,{ useEffect, useCallback } from 'react'
+import React,{ useCallback } from 'react'
 import styled from 'styled-components'
 import { useModalState, useModalDispatch } from "../../context/modalContext";
 import { Projects } from '../../data'
+import Contents from './ModalContents'
 
 const Block = styled.div`
 display: flex;
@@ -18,9 +19,9 @@ display: flex;
 
 const ModalBlock = styled.div`
   position: fixed;
-  width: 300px;
   background-color: #fff;
-  height: 250px;
+  width: 987px;
+  height: 655px;
   border-radius: 15px;
   &::-webkit-scrollbar {
     width: 10px;
@@ -43,6 +44,7 @@ const Content = styled.div`
   width: 100%;
   padding: 10px 0px 0px 25px;
   color: black;
+  font-size: 20px;
 `;
 const AddButton = styled.button`
   position: absolute;
@@ -53,12 +55,17 @@ const AddButton = styled.button`
   color: red;
 `;
 
-function ProjectModal({id}) {
+
+function ProjectModal() {
   const State = useModalState();
   const ModalDispatch = useModalDispatch();
   const ModalState = State.ModalState;
+  const id = State.id;
 
   const { list } = Projects();
+
+  const project = list.find(project => project.id===id); // 배열에서 id로 객체 찾아내오기 find 함수 사용!
+
 
   const closeModal = useCallback(() => {
     ModalDispatch({
@@ -72,9 +79,7 @@ function ProjectModal({id}) {
         <Block>
           <ModalBlock>
             <Content>
-              <div>
-
-              </div>
+              <Contents project={project} />
             </Content>
             <AddButton onClick={closeModal}>취소</AddButton>
           </ModalBlock>

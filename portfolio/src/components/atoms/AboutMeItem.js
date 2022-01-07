@@ -4,6 +4,10 @@ import styled from 'styled-components'
 const Flex = styled.div`
 display: flex;
 `
+const Items = styled.div`
+width: 70px;
+height: 23px;
+`
 
 const Item = styled.div`
 height: 25px;
@@ -17,6 +21,7 @@ line-height: 25px;
 
 color: #000000;
 margin-bottom: 14px;
+text-align: center;
 `
 
 const Value = styled.div`
@@ -25,11 +30,12 @@ height: 25px;
 font-family: Roboto;
 font-style: normal;
 font-weight: 500;
-font-size: 20px;
+font-size: 18px;
 line-height: 25px;
 
 color: #000000;
 margin-bottom: 14px;
+margin-left: 92px;
 `
 
 const items = [
@@ -65,7 +71,10 @@ function AboutMeItem() {
         <>
             {items.map(item => (
                 <Flex key={item.id}>
-                    <Item>{item.name}</Item> <Value>{item.value}</Value>
+                    <Items>
+                        <Item>{item.name}</Item>
+                    </Items>
+                    <Value>{item.value}</Value>
                 </Flex>
             ))}
         </>

@@ -4,14 +4,18 @@ import Github from '../../image/github.png'
 import Email from '../../image/email.png'
 
 const Icon  = styled.img`
-width: 35px;
-height: 35px;
-margin-right: 31px;
+width: 28px;
+height: 28px;
 cursor: pointer;
+
 `
 
 const Icons = styled.div`
+margin-left: 13px;
 margin-top: 20px;
+width: 120px;
+display: flex;
+justify-content: space-evenly;
 `
 
 function AboutMeIcons() {

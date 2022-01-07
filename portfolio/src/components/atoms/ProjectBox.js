@@ -1,7 +1,6 @@
 import React, { useCallback } from 'react'
 import styled from 'styled-components'
 import { useModalDispatch } from '../../context/modalContext'
-import ProjectModal from '../templates/ProjectModal'
 
 const Title = styled.div`
   width: 460px;
@@ -68,21 +67,33 @@ img {
 function ProjectBox({item}) {
 
   const ModalDispatch = useModalDispatch();
+
+  const id = item.id;
+
+  const changeid = useCallback(() => {
+    ModalDispatch({
+      type: "CHANGE_ID",
+      id,
+    });
+  }, [ModalDispatch,id]);
+
   const openModal = useCallback(() => {
     ModalDispatch({
       type: "MODAL_OPEN",
     });
   }, [ModalDispatch]);
 
-  function ClickEvent() {
+
+  function ClickEvent(id) {
     openModal();
+    changeid(id);
   }
 
     return (
       <>
         <div>
-            <Img onClick={() => ClickEvent()}>
-                <img src={item.image} />
+            <Img onClick={() => ClickEvent(item.id)}>
+                <img src={item.image} alt="projects"/>
                 <Title>{item.title}</Title>
                 <Host>{item.host}</Host>
             </Img>

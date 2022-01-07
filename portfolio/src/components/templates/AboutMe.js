@@ -4,6 +4,7 @@ import Title from '../molecules/TemplateHeader'
 import Inform from '../organisms/AboutMeInform'
 import MyImg from '../atoms/MyImg'
 import Text from '../atoms/AboutMeText'
+import Activity from '../molecules/MyActivity'
 
 const Box = styled.div`
 width: 100%;
@@ -14,19 +15,17 @@ background: #F4F4F4;
 `
 const Info = styled.div`
 display: flex;
-justify-content: space-between;
-margin-left: 190px;
-margin-right: 300px;
+justify-content: space-evenly;
 margin-top: 40px;
+margin-bottom: 50px;
 `
 const Bar = styled.div`
 width: 205px;
 height: 6px;
 
 background: #FBA2A2;
-margin-top: 89px;
 margin: 0 auto;
-margin-bottom: 77px;
+margin-bottom: 30px;
 `
 
 function AboutMe() {
@@ -36,6 +35,7 @@ function AboutMe() {
             <Info>
                 <MyImg />
                 <Inform />
+                <Activity />
             </Info>
             <Bar />
             <Text />
