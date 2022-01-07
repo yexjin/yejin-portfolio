@@ -8,7 +8,7 @@ position: fixed;
 display: flex;
 justify-content: space-between;
 width: 100%;
-height: 79px;
+height: 70px;
 z-index: 5;
 box-shadow: 0;
 

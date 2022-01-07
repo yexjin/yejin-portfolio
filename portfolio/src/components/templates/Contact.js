@@ -6,7 +6,7 @@ const Box = styled.div`
 width: 100%;
 height: 906px;
 
-background: #FFFFFF;
+background: #F4F4F4;
 padding-top: 79px;
 `
 

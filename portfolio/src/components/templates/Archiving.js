@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import Title from '../molecules/TemplateHeader';
+import Title from '../molecules/TemplateHeader'
+import Github from '../organisms/ArchivingGithub'
+import Tistory from '../organisms/ArchivingTistory'
 
 const Box = styled.div`
 width: 100%;
@@ -14,6 +16,8 @@ function Archiving() {
     return (
         <Box>
             <Title children='Archiving' />
+            <Github />
+            <Tistory />
         </Box>
     )
 }

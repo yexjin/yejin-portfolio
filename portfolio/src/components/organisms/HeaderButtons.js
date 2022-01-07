@@ -16,7 +16,7 @@ font-weight: 700;
 font-size: 22px;
 line-height: 26px;
 color: #666363;
-margin-right: 40px;
+margin-right: 17px;
 border-style: none;
 background: none;
 cursor: pointer;
@@ -47,11 +47,6 @@ function HeaderButtons() {
             <Link to='Projects' spy={true} smooth={true}>
                 <Click>
                     Projects
-                </Click>
-            </Link>
-            <Link to='Activity' spy={true} smooth={true}> 
-                <Click>
-                    Activity
                 </Click>
             </Link>
             <Link to='Contact' spy={true} smooth={true}>
