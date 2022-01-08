@@ -48,15 +48,50 @@ const Projects = () => {
         },
         {
             id: 3,
-            title: 'AI를 활용한 과제 협업, 평가 학습 블로그',
-            host: '2021 한이음 공모전',
-            image: 'img/projects/Join.png'
+            title: 'JOIN',
+            subtitle: '과제 협업 및 평가 학습 블로그 (교육자 Web & 학생 Web)',
+            host: '2021 한이음 공모전 [입선]',
+            image: 'img/projects/Join.png',
+            detailImg: 'img/projects/JoinDetail.png',
+            part: '팀장, 디자인, 프론트엔드, 백엔드  담당',
+            term: '2021.04 ~ 2021.11',
+            github: 'https://github.com/yexjin/JOIN_2021hanium',
+            video: 'https://youtu.be/atahos3IgDo',
+            skills: [{
+                a: 'React 사용 - Redux를 통한 상태관리, Axios로 서버 통신',
+                b: 'Koa.js 사용',
+                c: 'MySQLWorkbench를 통해 데이터베이스 관리',
+                d: 'Rstudio를 통해 빈도수 분석',
+                e: 'Docker, AWS, NGINX를 통해 배포',
+            }],
+            description: [{
+                a: '2021 한이음 멘토링 및 한이음 공모전을 위한 프로젝트입니다. 해당 프로젝트에서, 아이디어 기획을 제외한 모든 과정에 팀장으로서의 역할을 수행하였습니다. ',
+                b: '이전에 공부했던 React를 사용하며, 처음으로 Redux를 통해 상태관리를 적용했던 프로젝트였습니다.',
+                c: '아직 많이 부족한 서버지식을 가지고 멘토님과 팀원의 도움을 받아가며 함께 서버개발 뿐만아니라 Rstudio, Docker 사용 등을 경험해볼 수 있었던 좋은 기회였습니다. ',
+
+            }]
         },
         {
             id: 4,
             title: 'Rendering',
-            host: '서울과기대 프로젝트',
-            image: 'img/projects/Rendering.png'
+            host: '서울과기대 고급웹프로그래밍 프로젝트',
+            subtitle: '온라인 전시회 호스팅 서비스 플랫폼',
+            image: 'img/projects/Rendering.png',
+            detailImg: 'img/projects/RenderingDetail.png',
+            term: '2021.11 ~ 2021.12',
+            part: '팀장, 기획, 프론트엔드 담당',
+            github: 'https://github.com/yexjin/Rendering',
+            video: 'https://youtu.be/cOvGeTlB54k',
+            skills: [{
+                a: 'React 사용',
+                b: 'Redux를 통한 상태관리',
+                c: 'Axios로 서버 통신',
+            }],
+            description: [{
+                a: '서울과학기술대학교 고급웹프로그래밍 기말과제였던 프로젝트입니다. 팀장, 프론트엔드를 담당하였으며 간단히 과제를 위함을 목적이 아닌 기획부터 디자인, 개발 모두 힘써 진행을 완료했습니다.',
+                b: 'React, Redux 기술을 사용하는 것이 익숙해있었을 때였으므로 사용자가 색다른 느낌을 얻을 수 있는 애니메이션과 디자인에 충족하는 프론트개발에 힘을 다했습니다. ( 개인적으로 가장 애니메이션과 디자인이 마음에 드는 작품 :) )',
+                c: '학기 중에 2인 프로젝트로 한달만에 준비를 해야하는 거라 부담감이 있었지만 최선을 다했던, 만족스러운 결과를 얻은 프로젝트입니다.',
+            }]
         }
     ]
     return {
