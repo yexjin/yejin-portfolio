@@ -28,14 +28,6 @@ line-height: 39px;
 color: #000000;
 `
 
-const SubText = styled.div`
-font-size: 15px;
-font-weight: 400;
-color: #000000;
-font-family: Roboto;
-font-style: normal;
-`
-
 function PageTitle({children}) {
     return (
         <Title>
