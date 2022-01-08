@@ -6,7 +6,7 @@ font-family: Noto-Medium;
 font-style: normal;
 font-weight: normal;
 font-size: 23px;
-line-height: 24px;
+line-height: 15px;
 padding-top: 40px;
 
 color: #000000;

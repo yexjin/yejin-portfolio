@@ -12,11 +12,11 @@ const Projects = () => {
             part: '프론트엔드 개발 파트 담당',
             github: 'https://github.com/EndlessCreation/ec_homepage_front',
             skills: [{
-                a: 'React를 사용',
-                b: 'ContextAPI를 통한 상태관리',
-                c: 'Material-UI를 통한 반응형 웹 개발',
-                d: 'Styled-Components 사용',
-                e: 'Axios를 통한 서버 통신'  
+                a: '• React를 사용',
+                b: '• ContextAPI를 통한 상태관리',
+                c: '• Material-UI를 통한 반응형 웹 개발',
+                d: '• Styled-Components 사용',
+                e: '• Axios를 통한 서버 통신'  
             }],
             description: [{
                 a: '교내 학술 동아리에서 한달간  React 스터디를 진행한 후, 처음으로 React를 통한 웹사이트를 개발해 보았습니다.',
@@ -27,8 +27,24 @@ const Projects = () => {
         {
             id: 2,
             title: '우유마켓',
+            subtitle: '보유식재료 나눔, 식재료 공구를 위한 자취생 타깃 웹 사이트',
             host: '멋쟁이 사자처럼 9기',
-            image: 'img/projects/Wooyoo.png'
+            image: 'img/projects/Wooyoo.png',
+            detailImg: 'img/projects/WooyooDetail.png',
+            term: '2021.07 ~ 2021.08',
+            part: '기획, 디자인, 벡엔드, 프론트엔드, 영상 편집  담당',
+            github: 'https://github.com/WooyooMarket/wooyoo_market',
+            video: 'https://youtu.be/q1YNwdbzwI4',
+            skills: [{
+                a: '• Figma를 이용한 디자인',
+                b: '• Html, CSS, JS 사용',
+                c: '• Django 사용', 
+            }],
+            description: [{
+                a: '서울과학기술대학교 멋쟁이 사자처럼 9기 활동 프로젝트입니다.',
+                b: '아이디어 기획 부터 개발, 영상 편집에 모두 참여하였으며, 1년동안 멋사 활동을 통해 배운 Django 웹 프레임워크를 사용한 첫 프로젝트입니다. ',
+                c : 'HTML, CSS, JS에 대한 탄탄한 개발 능력을 쌓을 수 있었고, Django를 사용하며 MVT 패턴을 더욱 효과적으로 이해할 수 있었던 과정이었습니다.'
+            }]
         },
         {
             id: 3,

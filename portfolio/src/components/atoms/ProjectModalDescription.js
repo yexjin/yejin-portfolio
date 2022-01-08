@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import GitHub from '../../image/githubBig.png'
+import Youtube from '../../image/youtube.png'
 
 const Title = styled.div`
 width: 326px;
@@ -41,9 +42,9 @@ line-height: 15px;
 color: #000000;
 `
 
-const GitImg = styled.img`
+const Img = styled.img`
 width: 25px;
-height: 25px;
+height: auto;
 margin-left: 10px;
 `
 
@@ -74,26 +75,35 @@ function ProjectModalDescription({project}) {
         {project.skills.map(skill => (
             <SkillBox>
             <Skills>
-                •{skill.a}
+                {skill.a}
             </Skills>
             <Skills>
-            •{skill.b}
+            {skill.b}
         </Skills>
         <Skills>
-            •{skill.c}
+            {skill.c}
         </Skills>
         <Skills>
-            •{skill.d}
+            {skill.d}
         </Skills>
         <Skills>
-            •{skill.e}
+            {skill.e}
         </Skills>
         </SkillBox>
         ))}
         <Link href={project.github} target="_blank">
-        <GitImg src={GitHub} alt="Github링크"/> &nbsp; ⬅ 클릭!
+        <Img src={GitHub} alt="Github링크"/> &nbsp; ⬅ 클릭!
         </Link>
-
+        {
+            project.video && (
+                <>
+                <br />
+            <Link href={project.video} target="_blank">
+               <Img src={Youtube} alt="youtube 링크"/> &nbsp; ⬅ 클릭!
+            </Link>
+            </>
+            )
+        }
         </>
     )
 }
