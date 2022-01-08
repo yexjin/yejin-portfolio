@@ -1,5 +1,9 @@
 import Projects from './Projects'
+import Skills from './Skills'
+import Contact from './Contact'
 
 export {
-    Projects
+    Projects,
+    Skills,
+    Contact
 }

@@ -5,7 +5,7 @@ import { Link } from 'react-scroll'
 const Button = styled.div`
 cursor: pointer;
 width: 190px;
-height: 30px;
+height: 41px;
 padding-top: 10px;
 
 font-family: Roboto;

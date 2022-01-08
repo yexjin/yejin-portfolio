@@ -11,3 +11,68 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Kanit-Bold"; 
+  src: url('./fonts/Kanit-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: "Kanit-ExtraLight"; 
+  src: url('./fonts/Kanit-ExtraLight.ttf'); 
+}
+
+@font-face {
+  font-family: "Kanit-Light"; 
+  src: url('./fonts/Kanit-Light.ttf'); 
+}
+
+@font-face {
+  font-family: "Kanit-Medium"; 
+  src: url('./fonts/Kanit-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: "Kanit-Regular"; 
+  src: url('./fonts/Kanit-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: "Kanit-SemiBold"; 
+  src: url('./fonts/Kanit-SemiBold.ttf'); 
+}
+
+@font-face {
+  font-family: "Kanit-Thin"; 
+  src: url('./fonts/Kanit-Thin.ttf'); 
+}
+
+@font-face {
+  font-family: "Noto-Black"; 
+  src: url('./fonts/NotoSansKR-Black.ttf'); 
+}
+
+@font-face {
+  font-family: "Noto-Bold"; 
+  src: url('./fonts/NotoSansKR-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: "Noto-Light"; 
+  src: url('./fonts/NotoSansKR-Light.ttf'); 
+}
+
+@font-face {
+  font-family: "Noto-Medium"; 
+  src: url('./fonts/NotoSansKR-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: "Noto-Regular"; 
+  src: url('./fonts/NotoSansKR-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: "Noto-Thin"; 
+  src: url('./fonts/NotoSansKR-Thin.ttf'); 
+}
