@@ -31,14 +31,14 @@ function ContactPhone() {
 
     const { contact } = Contact();
 
+    const phone = contact.find(item=> item.id===1);
+
     return (
         <div>
-            {contact.map(item=>
             <Flex>
-                <Img src={item.icon} alt="아이콘"/>
-                <Value>{item.value}</Value>
-            </Flex>    
-            )}        
+                <Img src={phone.icon} alt="아이콘"/>
+                <Value>{phone.value}</Value>
+            </Flex>            
         </div>
     )
 }

@@ -17,7 +17,9 @@ function Page() {
     return (
         <>
         <Box>
-            <Banner />
+            <div id='Banner'>
+                <Banner />
+            </div>
             <div id='AboutMe'>
                 <AboutMe />
             </div>

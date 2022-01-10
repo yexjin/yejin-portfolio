@@ -37,7 +37,7 @@ font-weight: 500;
 font-size: 20px;
 line-height: 23px;
 
-color: #000000;
+color: #737373;
 margin: 0 auto;
 margin-top: 50px;
 `

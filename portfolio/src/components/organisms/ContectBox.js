@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import Phone from '../molecules/ContactPhone'
-import Mail from '../molecules/ContactMail'
 import Insta from '../molecules/ContactInsta'
+import Mail from '../molecules/ContactMail'
 
 const Box = styled.div`
 width: 404px;

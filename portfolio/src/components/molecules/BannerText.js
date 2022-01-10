@@ -4,6 +4,7 @@ import Bar from '../atoms/BannerBar'
 import BigText from '../atoms/BannerBigText'
 import SmallText from '../atoms/BannerSmallText'
 import Button from '../atoms/BannerButton'
+import { Link } from 'react-scroll'
 
 const Box = styled.div`
 padding-top: 192px;
@@ -16,7 +17,9 @@ function BannerText() {
          <BigText />
          <Bar />
          <SmallText />
-         <Button />   
+         <Link to='About Me' spy={true} smooth={true}>
+         <Button /> 
+         </Link>  
         </Box>
     )
 }
