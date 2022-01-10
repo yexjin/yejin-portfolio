@@ -7,6 +7,7 @@ import SubDescription from '../atoms/ProjectModalSubDescription'
 const Box = styled.div`
 margin-left: 50px;
 overflow: auto;
+overflow-x: hidden;
 height: 400px;
 `
 

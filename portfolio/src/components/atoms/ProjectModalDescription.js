@@ -91,14 +91,14 @@ function ProjectModalDescription({project}) {
         </Skills>
         </SkillBox>
         ))}
-        <Link href={project.github} target="_blank">
+        <Link href={project.github} target="_blank" rel="noreferrer">
         <Img src={GitHub} alt="Github링크"/> &nbsp; ⬅ 클릭!
         </Link>
         {
             project.video && (
                 <>
                 <br />
-            <Link href={project.video} target="_blank">
+            <Link href={project.video} target="_blank" rel="noreferrer">
                <Img src={Youtube} alt="youtube 링크"/> &nbsp; ⬅ 클릭!
             </Link>
             </>
