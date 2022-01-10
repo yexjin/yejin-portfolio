@@ -89,7 +89,7 @@ function ProjectModal() {
         <>
       {ModalState && (
         <Block>
-          <ModalBlock>
+          <ModalBlock data-aos="zoom-in"  data-aos-duration="500">
             <Back onClick={closeModal}>
               <img src={BackButton} />
             </Back>

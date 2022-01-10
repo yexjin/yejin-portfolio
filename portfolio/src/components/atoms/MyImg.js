@@ -26,7 +26,7 @@ margin-top: 5px;
 
 function MyImg() {
     return (
-        <div>
+        <div data-aos="fade-up"  data-aos-duration="1000">
         <Img />
         <Name />
         <Text>

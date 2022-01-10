@@ -9,7 +9,7 @@ display: flex;
 
 function SkillFront() {
     return (
-        <Flex>
+        <Flex data-aos="fade-up"  data-aos-duration="1000">
             <Title children="Front-end"/>
             <div>
                 <Front />

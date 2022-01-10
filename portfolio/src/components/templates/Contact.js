@@ -44,7 +44,7 @@ margin-top: 50px;
 
 function Contact() {
     return (
-        <Box>
+        <Box data-aos="fade-up"  data-aos-duration="1000">
             <TitleBox src={Title} alt="ContactMe"/>
             <ContactBox />
             <Bar />

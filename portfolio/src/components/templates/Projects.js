@@ -23,7 +23,7 @@ margin-right: 300px;
 
 function Projects() {
     return (
-        <Box>
+        <Box data-aos="fade-up"  data-aos-duration="3000">
            <Title children='Projects'/> 
            <SubText>⚠ 작품을 클릭해보세요!</SubText>
            <Slide />
