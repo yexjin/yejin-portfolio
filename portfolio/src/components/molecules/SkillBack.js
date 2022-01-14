@@ -1,29 +1,71 @@
 import React from 'react'
 import styled from 'styled-components'
-import Django from '../../image/backend/django.png'
-import Koa from '../../image/backend/koa.png'
+import { Progress } from 'reactstrap'
+import { Skills } from '../../data'
 
-const Box = styled.div`
-width: 300px;
-height: 554px;
-background: #FFFFFF;
+
+const Flex = styled.div`
+display: flex;
 `
 
-const Line = styled.div`
-padding-top: 50px;
-padding-left: 80px;
+const Name = styled.div`
+margin-left: 94px;
+margin-top: 5px;
+font-family: Kanit-Regular;
+font-style: normal;
+font-size: 20px;
+line-height: 29px;
 `
+
+const Percent = styled.div`
+margin-left: 20px;
+margin-top: 5px;
+font-family: Kanit-Regular;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+`
+
+const ProgressBox = styled.div`
+width: 554px;;
+margin-left: 37px;
+margin-top: 10px;
+margin-bottom: 18px;
+`
+
+const { back } = Skills();
 
 function SkillBack() {
     return (
-        <Box>
-            <Line>
-                <img src={Django} width="153px" height="60px" alt="htmlcssjs"/> <br />
-            </Line>
-            <Line>
-                <img src={Koa} width="190px" height="67px" alt="리액트" />
-            </Line>
-        </Box>
+        <Flex> <div> 
+        {back.map(skill=>{
+            return(<Name>
+                {skill.name}
+                </Name>)
+        })}</div>
+        <div>
+            {back.map(skill=>{
+                return(<ProgressBox>
+                    <Progress
+                        animated
+                        color="dark"
+                        striped
+                        value={skill.progress}
+                    />
+                </ProgressBox>)
+            })}
+        </div>
+        <div>
+            <div>
+                {back.map(skill=>{
+                    return(<Percent>
+                        {skill.progress}%
+                    </Percent>)
+                })}
+            </div>
+        </div>
+        </Flex>
     )
 }
 

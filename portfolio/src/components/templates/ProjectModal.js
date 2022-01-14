@@ -2,10 +2,11 @@ import React,{ useCallback } from 'react'
 import styled from 'styled-components'
 import { useModalState, useModalDispatch } from "../../context/modalContext";
 import { Projects } from '../../data'
-import Contents from './ModalContents'
+import Contents from '../organisms/ModalContents'
+import BackButton from '../../image/backButton.png'
 
 const Block = styled.div`
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -18,7 +19,6 @@ display: flex;
 `;
 
 const ModalBlock = styled.div`
-  position: fixed;
   background-color: #fff;
   width: 987px;
   height: 655px;
@@ -40,20 +40,32 @@ const ModalBlock = styled.div`
 `;
 
 const Content = styled.div`
-  position: fixed;
   width: 100%;
-  padding: 10px 0px 0px 25px;
-  color: black;
-  font-size: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 `;
-const AddButton = styled.button`
-  position: absolute;
-  width: 90px;
+
+const Back = styled.button`
   font-size: 15px;
   background: none;
   border: none;
   color: red;
+  margin-top: 43px;
+  margin-right: 55px;
+  float: right;
 `;
+
+const Command = styled.div`
+font-family: Noto-Regular;
+font-size: 13px;
+line-height: 15px;
+margin-right: 100px;
+margin-top: 30px;
+
+color: #3C3A3A;
+margin-bottom: 10px;
+float: right;
+`
 
 
 function ProjectModal() {
@@ -77,11 +89,14 @@ function ProjectModal() {
         <>
       {ModalState && (
         <Block>
-          <ModalBlock>
+          <ModalBlock data-aos="zoom-in"  data-aos-duration="500">
+            <Back onClick={closeModal}>
+              <img src={BackButton} />
+            </Back>
             <Content>
               <Contents project={project} />
+              <Command>⬇ 내용 부분을 스크롤 하세요</Command>
             </Content>
-            <AddButton onClick={closeModal}>취소</AddButton>
           </ModalBlock>
         </Block>
       )}

@@ -32,11 +32,11 @@ function ProjectSlider() {
     
     
     const PrevArrow=({currentSlide,slideCount,...props})=>(
-        <Prev {...props} src={prevButton} type="button" className="slick-prev"/> 
+        <Prev {...props} src={prevButton} className="slick-prev" /> 
     )
 
     const NextArrow=({currentSlide,slideCount,...props})=>(
-        <Next {...props} src={nextButton} type="button" className="slick-next" /> 
+        <Next {...props} src={nextButton} className="slick-next" /> 
     )
 
     const settings = {

@@ -5,19 +5,32 @@ import { Link } from 'react-scroll'
 const Button = styled.div`
 cursor: pointer;
 width: 190px;
-height: 30px;
-padding-top: 10px;
-
-font-family: Roboto;
+height: 41px;
+padding-top: 8px;
+font-family: Noto-Bold;
 font-style: normal;
-font-weight: bold;
 font-size: 21px;
 line-height: 25px;
-
 color: #FFFFFF;
 background-color: #FF9898;
 text-align: center;
-margin-top: 37px;
+margin-top: 50px;
+@media screen and (max-width: 1279px) {
+    width: 150px;
+    height: 29px;
+    font-size: 15px;
+    font-weight: medium;
+    padding-top: 5px;
+    margin-top: 30px;
+  }
+@media screen and (max-width: 767px) {
+    width: 127px;
+    height: 25px;
+    font-size: 13px;
+    font-weight: medium;
+    padding-top: 2px;
+    margin-top: 20px;
+}
 :hover{
 color: #FF9898;
 background-color: white;

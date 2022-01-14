@@ -1,31 +1,31 @@
 import React from 'react'
 import styled from 'styled-components'
-import Workbench from '../../image/tools/workbench.png'
-import Vs from '../../image/tools/vs.png'
-import Vsc from '../../image/tools/vsc.png'
+import { Skills } from '../../data'
 
-const Box = styled.div`
-width: 300px;
-height: 250px;
-background: #FFFFFF;
+const Names = styled.div`
+width: 600px;
+margin-left: 140px;
+display: flex;
 `
 
-const Line = styled.div`
-padding-top: 30px;
-padding-left: 60px;
+const Name = styled.div`
+margin-top: 5px;
+font-family: Kanit-Regular;
+font-style: normal;
+font-size: 20px;
+line-height: 29px;
+margin-right: 40px;
 `
+
+const { tool } = Skills();
 
 function SkillTool() {
     return (
-        <Box>
-            <Line>
-                <img src={Vs} width="76px" height="76px" alt="visual_studio"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img src={Vsc} width="76px" height="76px" alt="visual_studio_code" />
-            </Line>
-            <Line>
-                <img src={Workbench} width="76px" height="76px" alt="mysql_workbench" />
-            </Line>
-        </Box>
+        <Names>
+        {tool.map(skill=>{
+            return (<Name>{skill.name}</Name>)
+        })}
+        </Names>
     )
 }
 

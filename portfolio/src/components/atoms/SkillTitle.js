@@ -1,27 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const TitleBox = styled.div`
-width: 300px;
-height: 43px;
-padding-top: 14px;
-background-color: #848484;
-
-font-family: Roboto;
+const Title = styled.div`
+font-family: Kanit-Medium;
 font-style: normal;
-font-weight: 500;
-font-size: 28px;
-line-height: 33px;
-text-align: center;
+font-size: 25px;
+line-height: 29px;
 
-color: #FFFFFF;
+color: #8D8989;
+width: auto;
 `
 
+
 function SkillTitle({children}) {
-    return (
-        <TitleBox>
+    return (<Title>
             {children}
-        </TitleBox>
+            </Title>
     )
 }
 

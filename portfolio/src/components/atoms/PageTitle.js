@@ -19,21 +19,12 @@ const Text = styled.div`
 margin-right: 15px;
 margin-top:-15px;
 
-font-family: Roboto;
+font-family: Kanit-SemiBold;
 font-style: normal;
-font-weight: 600;
 font-size: 30px;
 line-height: 39px;
 
 color: #000000;
-`
-
-const SubText = styled.div`
-font-size: 15px;
-font-weight: 400;
-color: #000000;
-font-family: Roboto;
-font-style: normal;
 `
 
 function PageTitle({children}) {

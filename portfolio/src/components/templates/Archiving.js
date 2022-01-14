@@ -6,10 +6,10 @@ import Tistory from '../organisms/ArchivingTistory'
 
 const Box = styled.div`
 width: 100%;
-height: 712px;
+height: 750px;
 
 background: #FFFFFF;
-padding-top: 79px;
+padding-top: 40px;
 `
 
 function Archiving() {

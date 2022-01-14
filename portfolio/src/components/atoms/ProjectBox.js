@@ -11,7 +11,7 @@ const Title = styled.div`
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
-  font-weight: 500;
+  font-family: Kanit-SemiBold;
   margin-top: -190px;
   visibility: hidden;
 
@@ -29,6 +29,7 @@ const Host = styled.div`
   font-weight: 500;
   margin-top: -140px;
   visibility: hidden;
+  font-family: Kanit-Medium;
 `
 
 const Img = styled.div`
