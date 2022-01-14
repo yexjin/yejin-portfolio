@@ -14,7 +14,6 @@ margin-bottom: 79px;
     margin-bottom: 104px;
   }
 @media screen and (max-width: 767px) {
-
     height: 500px;
 }
 `

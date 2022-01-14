@@ -7,6 +7,10 @@ const InformBox = styled.div`
 height: 318px;
 width: auto;
 padding-top: 40px;
+@media screen and (max-width: 1279px) {
+    height: 250px;
+    padding-top: 15px;
+  }
 @media screen and (max-width: 767px) {
     height: 180px;
     padding-top: 0px;

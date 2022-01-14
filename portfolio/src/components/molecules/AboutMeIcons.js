@@ -8,12 +8,17 @@ width: 28px;
 height: 28px;
 cursor: pointer;
 
+@media screen and (max-width: 1279px) {
+    width: 23px;
+    height: 23px;
+    margin-right: 20px;
+  }
+
 @media screen and (max-width: 767px) {
     width: 18px;
     height: 18px;
     margin-right: 20px;
 }
-
 `
 
 const Icons = styled.div`
@@ -22,9 +27,15 @@ margin-top: 20px;
 width: 120px;
 display: flex;
 justify-content: space-evenly;
+@media screen and (max-width: 1279px) {
+    width: 100px;
+    margin-left: 15px;
+    margin-top: 0px;
+  }
 @media screen and (max-width: 767px) {
     width: 60px;
     margin-left: 25px;
+    margin-top: 10px;
 }
 `
 

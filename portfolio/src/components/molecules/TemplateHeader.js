@@ -10,7 +10,7 @@ margin-left: 100px;
   }
 @media screen and (max-width: 767px) {
     margin-left: 31px;
-    padding-top: 10px;
+    padding-top: 50px;
 }
 `
 

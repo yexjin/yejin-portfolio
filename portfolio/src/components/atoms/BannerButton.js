@@ -17,10 +17,10 @@ text-align: center;
 margin-top: 50px;
 @media screen and (max-width: 1279px) {
     width: 150px;
-    height: 29px;
+    height: 30px;
     font-size: 15px;
     font-weight: medium;
-    padding-top: 5px;
+    padding-top: 2.5px;
     margin-top: 30px;
   }
 @media screen and (max-width: 767px) {

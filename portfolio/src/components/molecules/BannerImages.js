@@ -10,6 +10,9 @@ const Box = styled.div`
 margin-top: 242px;
 width: 600px;
 height: auto;
+@media screen and (max-width: 1279px) {
+    margin-top: 130px;
+  }
 `
 
 const Img1 = styled.img`
@@ -19,7 +22,8 @@ background: #C4C4C4;
 @media screen and (max-width: 1279px) {
     width: 197px;
     height: 270px; 
-    margin-left: 10px;
+    margin-left: -140px;
+    position: fixed;
   }
 @media screen and (max-width: 767px) {
     visibility: hidden;
