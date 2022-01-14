@@ -19,9 +19,8 @@ const Text = styled.div`
 margin-right: 15px;
 margin-top:-15px;
 
-font-family: Roboto;
+font-family: Kanit-SemiBold;
 font-style: normal;
-font-weight: 600;
 font-size: 30px;
 line-height: 39px;
 

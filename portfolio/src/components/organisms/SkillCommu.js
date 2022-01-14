@@ -10,7 +10,7 @@ margin-top: 30px;
 
 function SkillTool() {
     return (
-        <Flex>
+        <Flex data-aos="fade-up"  data-aos-duration="1000">
         <Title children="Communication"/>
         <Commu />
         </Flex>

@@ -56,7 +56,7 @@ const Back = styled.button`
 `;
 
 const Command = styled.div`
-font-family: Noto-Redular;
+font-family: Noto-Regular;
 font-size: 13px;
 line-height: 15px;
 margin-right: 100px;
@@ -89,7 +89,7 @@ function ProjectModal() {
         <>
       {ModalState && (
         <Block>
-          <ModalBlock>
+          <ModalBlock data-aos="zoom-in"  data-aos-duration="500">
             <Back onClick={closeModal}>
               <img src={BackButton} />
             </Back>

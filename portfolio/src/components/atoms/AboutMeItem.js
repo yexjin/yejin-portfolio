@@ -13,9 +13,8 @@ const Item = styled.div`
 height: 25px;
 width: 100px;
 
-font-family: Roboto;
+font-family: Noto-Medium;
 font-style: normal;
-font-weight: 600;
 font-size: 18px;
 line-height: 25px;
 
@@ -27,9 +26,8 @@ text-align: center;
 const Value = styled.div`
 height: 25px;
 
-font-family: Roboto;
+font-family: Noto-Regular;
 font-style: normal;
-font-weight: 500;
 font-size: 18px;
 line-height: 25px;
 

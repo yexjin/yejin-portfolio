@@ -11,9 +11,8 @@ const Value = styled.div`
 width: 228px;
 height: 39px;
 text-align: center;
-font-family: Roboto;
+font-family: Kanit-Regular;
 font-style: normal;
-font-weight: 500;
 font-size: 23px;
 line-height: 27px;
 

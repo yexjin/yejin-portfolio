@@ -14,7 +14,7 @@ margin-top: 131px;
 
 function ArchivingTistory() {
     return (
-        <Content>
+        <Content data-aos="fade-up"  data-aos-duration="1000">
             <a href="https://yexjinitlog.tistory.com" target="_blank" style={{textDecoration:'none'}} rel="noreferrer">
             <Img img={TistoryIcon}/>
             </a>

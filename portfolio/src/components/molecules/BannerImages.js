@@ -1,8 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+AOS.init();
 
 const Box = styled.div`
-margin-top: 192px;
+margin-top: 242px;
 width: 600px;
 height: auto;
 `
@@ -12,7 +16,16 @@ width: 319px;
 height: 415px;
 background: #C4C4C4;
 display: fixed;
-margin-left: 100px;
+margin-left: 30px;
+@media screen and (max-width: 1279px) {
+    width: 197px;
+    height: 248px; 
+  }
+@media screen and (max-width: 767px) {
+    visibility: hidden;
+    width: 10px;
+    height: 10px;
+}
 `
 const Img2 = styled.div`
 width: 257px;
@@ -26,9 +39,9 @@ margin-top: -200px;
 function BannerImages() {
     return (
         <div>
-            <Box>
+            <Box data-aos="fade-left"  data-aos-duration="500">
                 <Img1/>
-                <Img2/>
+                {/* <Img2/> */}
             </Box>
         </div>
     )

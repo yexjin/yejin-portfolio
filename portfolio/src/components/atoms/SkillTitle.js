@@ -2,9 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Title = styled.div`
-font-family: Roboto;
+font-family: Kanit-Medium;
 font-style: normal;
-font-weight: 500;
 font-size: 25px;
 line-height: 29px;
 

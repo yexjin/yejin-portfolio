@@ -4,11 +4,13 @@ import Logo from '../atoms/Logo'
 import Buttons from '../organisms/HeaderButtons'
 
 const Box = styled.div`
-position: fixed;
 display: flex;
 justify-content: space-between;
-width: 100%;
+width: auto;
 height: 70px;
+position: fixed;
+top: 0px;
+width: 100%;
 z-index: 5;
 box-shadow: 0;
 

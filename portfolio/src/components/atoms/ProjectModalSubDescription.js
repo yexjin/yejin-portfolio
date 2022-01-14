@@ -7,9 +7,9 @@ width: 326px;
 `
 
 const Text = styled.div`
-font-family: Noto-Redular;
+font-family: Noto-Regular;
 font-size: 13px;
-line-height: 15px;
+line-height: 18px;
 
 color: #3C3A3A;
 margin-bottom: 10px;

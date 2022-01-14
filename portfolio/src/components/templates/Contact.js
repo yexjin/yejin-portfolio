@@ -14,8 +14,8 @@ padding: 0 auto;
 
 
 const TitleBox = styled.img`
-width: 154px;
-height: 38px;
+width: 170px;
+height: 50px;
 margin-left: 44%;
 `
 
@@ -31,9 +31,8 @@ const Footer = styled.div`
 width: 245px;
 height: 23px;
 
-font-family: Roboto;
+font-family: Kanit-Regular;
 font-style: normal;
-font-weight: 500;
 font-size: 20px;
 line-height: 23px;
 
@@ -44,7 +43,7 @@ margin-top: 50px;
 
 function Contact() {
     return (
-        <Box>
+        <Box data-aos="fade-up"  data-aos-duration="3000">
             <TitleBox src={Title} alt="ContactMe"/>
             <ContactBox />
             <Bar />

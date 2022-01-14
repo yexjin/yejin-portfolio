@@ -11,7 +11,7 @@ padding-top: 40px;
 
 function AboutMeInform() {
     return (
-        <InformBox>
+        <InformBox data-aos="fade-up"  data-aos-duration="1000">
             <Inform />
             <Icons />
         </InformBox>

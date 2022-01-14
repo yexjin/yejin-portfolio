@@ -14,7 +14,7 @@ margin-top: 80px;
 
 function ArchivingGithub() {
     return (
-        <Content>
+        <Content data-aos="fade-up"  data-aos-duration="1000">
             <a href="https://github.com/yexjin" target="_blank" style={{textDecoration:'none'}} rel="noreferrer">
             <Img img={GitIcon}/>
             </a>

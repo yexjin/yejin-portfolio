@@ -7,9 +7,9 @@ const Title = styled.div`
 width: 326px;
 height: auto;
 
-font-family: Noto-Redular;
+font-family: Kanit-Medium;
 font-size: 14px;
-line-height: 15px;
+line-height: 20px;
 
 color: #000000;
 `
@@ -19,7 +19,7 @@ margin-top: 19px;
 width: 326px;
 height: auto;
 
-font-family: Noto-Redular;
+font-family: Noto-Regular;
 font-size: 13px;
 line-height: 15px;
 
@@ -35,7 +35,7 @@ margin-top: 5px;
 width: 326px;
 height: auto;
 
-font-family: Noto-Redular;
+font-family: Noto-Regular;
 font-size: 13px;
 line-height: 15px;
 
@@ -49,7 +49,7 @@ margin-left: 10px;
 `
 
 const Link = styled.a`
-font-family: Noto-Redular;
+font-family: Noto-Regular;
 font-size: 13px;
 line-height: 15px;
 

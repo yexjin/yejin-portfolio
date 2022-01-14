@@ -5,6 +5,10 @@ import Inform from '../organisms/AboutMeInform'
 import MyImg from '../atoms/MyImg'
 import Text from '../atoms/AboutMeText'
 import Activity from '../molecules/MyActivity'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+AOS.init();
 
 const Box = styled.div`
 width: 100%;
@@ -32,12 +36,12 @@ function AboutMe() {
     return (
         <Box>
             <Title children='About Me'/>
-            <Info>
+            <Info >
                 <MyImg />
                 <Inform />
                 <Activity />
             </Info>
-            <Bar />
+            <Bar data-aos="fade-up"  data-aos-duration="1000"/>
             <Text />
         </Box>
     )

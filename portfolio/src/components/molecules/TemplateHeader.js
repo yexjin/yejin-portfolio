@@ -9,7 +9,7 @@ margin-left: 100px;
 
 function TemplateHeader({children}) {
     return (
-        <Header>
+        <Header data-aos="fade-up"  data-aos-duration="1000" >
             <PageTitle children={children}/>
         </Header>
     )
