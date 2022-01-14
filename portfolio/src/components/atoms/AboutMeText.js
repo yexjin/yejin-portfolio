@@ -12,6 +12,12 @@ text-align: center;
 
 color: #000000;
 margin: 0 auto;
+@media screen and (max-width: 767px) {
+    width: 400px;
+    height: 50px;
+    font-size: 12px;
+    line-height: 20px;
+}
 `
 
 function AboutMeText() {
