@@ -20,4 +20,4 @@ function ProjectModalTitle({text}) {
     )
 }
 
-export default ProjectModalTitle
+export default React.memo(ProjectModalTitle)

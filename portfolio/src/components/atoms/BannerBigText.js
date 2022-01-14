@@ -8,7 +8,7 @@ AOS.init();
 
 const Text = styled.div`
 width: 450px;
-font-family: Noto-Bold;
+font-family: Kanit-Bold;
 font-style: normal;
 font-size: 37px;
 line-height: 60px;
@@ -45,4 +45,4 @@ function BannerBigText() {
     )
 }
 
-export default BannerBigText
+export default React.memo(BannerBigText)

@@ -108,4 +108,4 @@ function ProjectModalDescription({project}) {
     )
 }
 
-export default ProjectModalDescription
+export default React.memo(ProjectModalDescription)

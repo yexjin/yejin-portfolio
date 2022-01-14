@@ -29,4 +29,4 @@ function BannerSmallText() {
     )
 }
 
-export default BannerSmallText
+export default React.memo(BannerSmallText)
