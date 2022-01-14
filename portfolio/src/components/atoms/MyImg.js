@@ -7,10 +7,9 @@ const Img = styled.img`
 width: 230px;
 height: 230px;
 border-radius: 50%;
-
 @media screen and (max-width: 1279px) {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
   }
 @media screen and (max-width: 767px) {
     width: 120px;
@@ -30,8 +29,11 @@ text-align: center;
 margin-left: 5px;
 margin-top: 5px;
 @media screen and (max-width: 1279px) {
+    width: 150px;
     font-size: 13px;
-    width: 100px;
+    margin-left: 5px;
+    line-height: 15px;
+    margin-top: 15px;
   }
 @media screen and (max-width: 767px) {
     font-size: 10px;

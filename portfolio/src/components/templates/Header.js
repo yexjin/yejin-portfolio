@@ -19,6 +19,11 @@ transition: box-shadow 0.5s;
 &.scrolled {
   box-shadow: 0 0 15px LightGray;
 }
+@media screen and (max-width: 1279px) {
+    height: 79px;
+}
+@media screen and (max-width: 767px) {
+}
 `
 
 function Header() {

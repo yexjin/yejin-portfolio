@@ -14,10 +14,13 @@ margin-left: 37px;
 margin-top: 25px;
 text-decoration: none;
 @media screen and (max-width: 1279px) {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 20px;
   }
 @media screen and (max-width: 767px) {
     font-size: 17px;
+    margin-top: 25px;
 }
 `
 

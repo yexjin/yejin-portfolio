@@ -14,15 +14,18 @@ height: 889px;
 padding-top: 25px;
 
 background: #F4F4F4;
+@media screen and (max-width: 1279px) {
+    height: 1000px;
+  }
 @media screen and (max-width: 767px) {
-    height: 750px;
+    height: 1000px;
 }
 `
 const Info = styled.div`
 display: flex;
 justify-content: space-evenly;
 margin-top: 40px;
-margin-bottom: 50px;
+margin-bottom: 10px;
 @media screen and (max-width: 1279px) {
 
   }
@@ -35,7 +38,12 @@ height: 6px;
 
 background: #FBA2A2;
 margin: 0 auto;
+margin-top: 20px;
 margin-bottom: 30px;
+@media screen and (max-width: 1279px) {
+    width: 205px;
+    height: 4px;
+  }
 @media screen and (max-width: 767px) {
     width: 205px;
     height: 3px;
@@ -44,11 +52,17 @@ margin-bottom: 30px;
 
 function AboutMe() {
 
+    const isPc = useMediaQuery({
+        query: "(min-width: 1280px)",
+      });
+    const isTablet = useMediaQuery({
+        query: "(min-width: 768px) and (max-width:1279px)",
+      });
     const isMobile = useMediaQuery({ query: " (max-width: 767px)" });
 
     return (
         <Box>
-            {(!isMobile) && (
+            {isPc && (
                     <>
                     <Title children='About Me'/>
                     <Info >
@@ -60,14 +74,30 @@ function AboutMe() {
                     <Text />
                     </>
             )}
-            {isMobile && (
-                <>
+            {isTablet && (
+                    <>
                     <Title children='About Me'/>
                     <Info >
                         <MyImg />
                         <Inform />
                     </Info>
                     <Info>
+                        <Activity />
+                    </Info>
+                    <Bar data-aos="fade-up"  data-aos-duration="1000"/>
+                    <Text />
+                    </>
+            )}
+            {isMobile && (
+                <>
+                    <Title children='About Me'/>
+                    <Info >
+                        <MyImg />
+                        </Info>
+                        <Info >
+                        <Inform />
+                        </Info>
+                        <Info >
                         <Activity />
                     </Info>
                     <Bar data-aos="fade-up"  data-aos-duration="1000"/>

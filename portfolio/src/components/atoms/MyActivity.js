@@ -7,6 +7,9 @@ display: flex;
 const Items = styled.div`
 display: flex;
 width: 70px;
+@media screen and (max-width: 1279px) {
+width: 50px;
+  }
 @media screen and (max-width: 767px) {
     width: 30px;
 }
@@ -23,6 +26,11 @@ line-height: 25px;
 color: #000000;
 margin-bottom: 14px;
 text-align: center;
+@media screen and (max-width: 1279px) {
+    font-size: 14px;
+    margin-bottom: 12px;
+    width: 60px;
+  }
 @media screen and (max-width: 767px) {
     font-size: 12px;
     margin-bottom: 0px;
@@ -45,6 +53,11 @@ line-height: 25px;
 
 color: #000000;
 margin-bottom: 14px;
+@media screen and (max-width: 1279px) {
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+  }
 @media screen and (max-width: 767px) {
     font-size: 13px;
      margin-bottom: 0px;

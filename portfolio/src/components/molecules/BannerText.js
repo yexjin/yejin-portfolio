@@ -16,7 +16,7 @@ padding-top: 192px;
 margin: 0 0 0 200px;
 @media screen and (max-width: 1279px) {
     padding-top: 154px; 
-    margin-left: 130px;
+    margin-left: 65px;
   }
 @media screen and (max-width: 767px) {
     padding-top: 146px;
