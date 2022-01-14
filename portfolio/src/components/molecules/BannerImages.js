@@ -13,13 +13,13 @@ height: auto;
 `
 
 const Img1 = styled.img`
-width: 319px;
-height: 415px;
+width: 325px;
+height: 460px;
 background: #C4C4C4;
-margin-left: 30px;
 @media screen and (max-width: 1279px) {
     width: 197px;
-    height: 248px; 
+    height: 270px; 
+    margin-left: 10px;
   }
 @media screen and (max-width: 767px) {
     visibility: hidden;

@@ -6,21 +6,28 @@ display: flex;
 `
 const Items = styled.div`
 width: 70px;
-height: 23px;
+@media screen and (max-width: 767px) {
+    width: 30px;
+}
 `
 
 const Item = styled.div`
-height: 25px;
 width: 100px;
 
 font-family: Noto-Medium;
-font-style: normal;
 font-size: 18px;
 line-height: 25px;
 
 color: #000000;
 margin-bottom: 14px;
 text-align: center;
+
+@media screen and (max-width: 767px) {
+    font-size: 12px;
+    margin-bottom: 0px;
+    width: 50px;
+
+}
 `
 
 const Value = styled.div`
@@ -34,6 +41,11 @@ line-height: 25px;
 color: #000000;
 margin-bottom: 14px;
 margin-left: 92px;
+@media screen and (max-width: 767px) {
+    font-size: 13px;
+     margin-bottom: 0px;
+     margin-left: 30px;
+}
 `
 
 const items = [

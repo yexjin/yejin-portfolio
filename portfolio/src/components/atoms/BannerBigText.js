@@ -1,10 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Typing } from 'typing-effect-reactjs';
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-
-AOS.init();
 
 const Text = styled.div`
 width: 450px;
@@ -31,7 +27,7 @@ const types = ['프론트엔드 개발자', '더 많이 공부하고 싶은 개�
 
 function BannerBigText() {
     return (
-        <Text data-aos="fade-right"  data-aos-duration="500">
+        <Text>
             <Typing 
                 text={types}
                 typeSpeed={100}

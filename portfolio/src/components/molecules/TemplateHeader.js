@@ -5,6 +5,13 @@ import PageTitle from '../atoms/PageTitle'
 const Header = styled.div`
 padding-top: 54px;
 margin-left: 100px;
+@media screen and (max-width: 1279px) {
+    margin-left: 65px;
+  }
+@media screen and (max-width: 767px) {
+    margin-left: 31px;
+    padding-top: 10px;
+}
 `
 
 function TemplateHeader({children}) {
