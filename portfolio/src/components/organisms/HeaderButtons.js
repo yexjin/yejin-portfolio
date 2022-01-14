@@ -9,7 +9,6 @@ margin-top: 27px;
 
 const Click = styled.button`
 width: 130px;
-height: 26px;
 font-family: Kanit-SemiBold;
 font-style: normal;
 font-size: 22px;
@@ -20,8 +19,9 @@ border-style: none;
 background: none;
 cursor: pointer;
 @media screen and (max-width: 1279px) {
-    font-size: 20px;
+    font-size: 17px;
     width: 100px;
+
   }
 @media screen and (max-width: 767px) {
     font-size: 0px;

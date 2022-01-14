@@ -14,7 +14,7 @@ text-align: center;
 margin-left: 5px;
 @media screen and (max-width: 1279px) {
   width: 150px;
-  height: 27px;
+  height: 15px;
   }
 @media screen and (max-width: 767px) {
 width: 109px;
@@ -27,6 +27,10 @@ width: 223px;
 height: 35px;
 background: linear-gradient(to top, #FBA2A269 50%, transparent 41%);
 margin: 0 auto;
+@media screen and (max-width: 1279px) {
+  width: 150px;
+  height: 27px;
+  }
 @media screen and (max-width: 767px) {
 width: 109px;
 height: 13px;
@@ -42,9 +46,10 @@ font-size: 33px;
 line-height: 39px;
 color: #000000;
 @media screen and (max-width: 1279px) {
-  font-size: 28px;
-  width: 100px;
+  width: 150px;
   height: 27px;
+  line-height: 30px;
+  font-size: 23px;
   }
 @media screen and (max-width: 767px) {
   font-size: 17px;
