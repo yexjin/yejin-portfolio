@@ -35,4 +35,4 @@ function ProjectModalSubDescription({project}) {
     )
 }
 
-export default ProjectModalSubDescription
+export default React.memo(ProjectModalSubDescription)

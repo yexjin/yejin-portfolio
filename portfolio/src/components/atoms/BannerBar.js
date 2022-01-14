@@ -23,4 +23,4 @@ function BannerBar() {
     )
 }
 
-export default BannerBar
+export default React.memo(BannerBar)

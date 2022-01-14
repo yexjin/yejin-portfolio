@@ -49,4 +49,4 @@ function BannerButton() {
     )
 }
 
-export default BannerButton
+export default React.memo(BannerButton)
