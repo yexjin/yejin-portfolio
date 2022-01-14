@@ -56,7 +56,7 @@ const Back = styled.button`
 `;
 
 const Command = styled.div`
-font-family: Noto-Redular;
+font-family: Noto-Regular;
 font-size: 13px;
 line-height: 15px;
 margin-right: 100px;

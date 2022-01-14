@@ -10,9 +10,8 @@ display: flex;
 
 const Name = styled.div`
 margin-top: 5px;
-font-family: Roboto;
+font-family: Kanit-Regular;
 font-style: normal;
-font-weight: 600;
 font-size: 20px;
 line-height: 29px;
 margin-right: 40px;

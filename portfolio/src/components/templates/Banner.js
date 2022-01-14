@@ -7,8 +7,15 @@ const Box = styled.div`
 display: flex;
 justify-content: space-between;
 height: 839px;
-padding-top: px;
-padding-bottom: 79px;
+margin-bottom: 79px;
+@media screen and (max-width: 1279px) {
+    height: 500px;
+    margin-bottom: 104px;
+  }
+@media screen and (max-width: 767px) {
+
+    height: 403px;
+}
 `
 
 function Banner() {

@@ -2,16 +2,21 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Text = styled.div`
-width: 526px;
+width: 550px;
 height: 85px;
 
-font-family: Roboto;
+font-family: Noto-Regular;
 font-style: normal;
-font-weight: 500;
 font-size: 21px;
 line-height: 30px;
 
 color: #000000;
+@media screen and (max-width: 1279px) {
+    font-size: 21px;
+  }
+@media screen and (max-width: 767px) {
+font-size: 15px;
+}
 `
 
 function BannerSmallText() {

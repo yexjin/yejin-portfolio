@@ -10,9 +10,8 @@ display: flex;
 const Name = styled.div`
 margin-left: 94px;
 margin-top: 5px;
-font-family: Roboto;
+font-family: Kanit-Regular;
 font-style: normal;
-font-weight: 600;
 font-size: 20px;
 line-height: 29px;
 `
@@ -20,9 +19,8 @@ line-height: 29px;
 const Percent = styled.div`
 margin-left: 20px;
 margin-top: 5px;
-font-family: Roboto;
+font-family: Kanit-Regular;
 font-style: normal;
-font-weight: 500;
 font-size: 18px;
 line-height: 29px;
 `

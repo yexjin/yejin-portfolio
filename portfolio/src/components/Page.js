@@ -8,15 +8,10 @@ import Contact from './templates/Contact'
 import styled from 'styled-components'
 
 
-const Box = styled.div`
-position: relative;
-`
-
 function Page() {
 
     return (
         <>
-        <Box>
             <div id='Banner'>
                 <Banner />
             </div>
@@ -35,7 +30,6 @@ function Page() {
             <div id='Contact'>
                 <Contact />
             </div>
-            </Box>
         </>
     )
 }

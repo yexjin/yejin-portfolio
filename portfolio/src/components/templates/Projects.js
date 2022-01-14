@@ -14,10 +14,10 @@ const SubText = styled.div`
 font-size: 17px;
 font-weight: 700;
 color: #666363;
-font-family: Roboto;
+font-family: Noto-Regular;
 font-style: normal;
 float: right;
-padding-top: 40px;
+padding-top: 90px;
 margin-right: 300px;
 `
 

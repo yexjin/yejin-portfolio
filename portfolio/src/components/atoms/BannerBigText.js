@@ -7,16 +7,24 @@ import 'aos/dist/aos.css'
 AOS.init();
 
 const Text = styled.div`
-width: 438px;
-
-font-family: Roboto;
+width: 450px;
+font-family: Noto-Bold;
 font-style: normal;
-font-weight: bold;
 font-size: 37px;
 line-height: 60px;
-
 color: #000000;
 margin-bottom: 173px;
+
+@media screen and (max-width: 1279px) {
+    font-size: 29px;
+    width: 320px;
+    margin-bottom: 100px;
+  }
+@media screen and (max-width: 767px) {
+font-size: 25px;
+width: 350px;
+margin-bottom: 50px;
+}
 `
 
 const types = ['프론트엔드 개발자', '더 많이 공부하고 싶은 개발자', '열정적인 개발자']

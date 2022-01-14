@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Text = styled.div`
-font-family: Noto-Medium;
+font-family: Kanit-Medium;
 font-style: normal;
 font-weight: normal;
-font-size: 23px;
+font-size: 26px;
 line-height: 15px;
 padding-top: 40px;
 

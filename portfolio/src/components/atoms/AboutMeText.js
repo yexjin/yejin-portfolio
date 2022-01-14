@@ -4,9 +4,8 @@ import styled from 'styled-components'
 const Box = styled.div`
 width: 691px;
 height: 85px;
-font-family: Roboto;
+font-family: Kanit-Medium;
 font-style: normal;
-font-weight: 500;
 font-size: 18px;
 line-height: 30px;
 text-align: center;
