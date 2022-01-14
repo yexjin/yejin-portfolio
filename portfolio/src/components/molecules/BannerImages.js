@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import ProfileImg from '../../image/ProfileImgBig.png'
 
 AOS.init();
 
@@ -11,7 +12,7 @@ width: 600px;
 height: auto;
 `
 
-const Img1 = styled.div`
+const Img1 = styled.img`
 width: 319px;
 height: 415px;
 background: #C4C4C4;
@@ -40,7 +41,7 @@ function BannerImages() {
     return (
         <div>
             <Box data-aos="fade-left"  data-aos-duration="500">
-                <Img1/>
+                <Img1 src={ProfileImg}/>
                 {/* <Img2/> */}
             </Box>
         </div>
