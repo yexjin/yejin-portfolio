@@ -28,8 +28,8 @@ margin-top: 50px;
     height: 25px;
     font-size: 13px;
     font-weight: medium;
-    padding-top: 2px;
-    margin-top: 20px;
+    padding-top: 1px;
+    margin-top: 100px;
 }
 :hover{
 color: #FF9898;
