@@ -28,14 +28,14 @@ margin-left: 30px;
     height: 10px;
 }
 `
-const Img2 = styled.div`
-width: 257px;
-height: 313px;
-background: black;
-display: fixed;
-z-index: 3;
-margin-top: -200px;
-`
+// const Img2 = styled.div`
+// width: 257px;
+// height: 313px;
+// background: black;
+// display: fixed;
+// z-index: 3;
+// margin-top: -200px;
+// `
 
 function BannerImages() {
     return (

@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Text from '../molecules/BannerText'
 import Image from '../molecules/BannerImages'
+import CTLoading from '../organisms/CTLoading'
 
 const Box = styled.div`
 display: flex;
@@ -19,7 +20,15 @@ margin-bottom: 79px;
 `
 
 function Banner() {
-    return (
+    const [ loading, setLoading ] = useState(true);
+
+  useEffect(() => {
+    setLoading(false);
+  }, []);
+  
+  return loading ? (
+    <CTLoading />
+  ) : (
         <Box>
          <Text />
          <Image />   

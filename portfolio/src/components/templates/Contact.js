@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState }  from 'react'
 import styled from 'styled-components'
 import Title from '../../image/ContactMe.png'
 import ContactBox from '../organisms/ContectBox'
+import CTLoading from '../organisms/CTLoading'
 
 const Box = styled.div`
 width: 100%;
@@ -42,7 +43,15 @@ margin-top: 50px;
 `
 
 function Contact() {
-    return (
+    const [ loading, setLoading ] = useState(true);
+
+    useEffect(() => {
+      setLoading(false);
+    }, []);
+    
+    return loading ? (
+      <CTLoading />
+    ) : (
         <Box data-aos="fade-up"  data-aos-duration="3000">
             <TitleBox src={Title} alt="ContactMe"/>
             <ContactBox />

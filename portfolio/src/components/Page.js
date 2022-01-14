@@ -5,7 +5,6 @@ import Archiving from './templates/Archiving'
 import Skills from './templates/Skills'
 import Projects from './templates/Projects'
 import Contact from './templates/Contact'
-import styled from 'styled-components'
 
 
 function Page() {
