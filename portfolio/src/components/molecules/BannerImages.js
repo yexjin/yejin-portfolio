@@ -16,7 +16,6 @@ const Img1 = styled.img`
 width: 319px;
 height: 415px;
 background: #C4C4C4;
-display: fixed;
 margin-left: 30px;
 @media screen and (max-width: 1279px) {
     width: 197px;

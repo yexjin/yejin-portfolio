@@ -103,4 +103,4 @@ function ProjectBox({item}) {
     )
 }
 
-export default ProjectBox
+export default React.memo(ProjectBox)
