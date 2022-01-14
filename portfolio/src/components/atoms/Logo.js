@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 
 const LogoText = styled.div`
 cursor: pointer;
-width: 211px;
+width: 400px;
 height: 28px;
 font-family: Kanit-Bold;
 font-style: normal;

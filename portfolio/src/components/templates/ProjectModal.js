@@ -1,9 +1,10 @@
-import React,{ useCallback } from 'react'
+import React,{ useCallback, useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { useModalState, useModalDispatch } from "../../context/modalContext";
 import { Projects } from '../../data'
 import Contents from '../organisms/ModalContents'
 import BackButton from '../../image/backButton.png'
+import CTLoading from '../organisms/CTLoading'
 
 const Block = styled.div`
   display: flex;
@@ -84,14 +85,21 @@ function ProjectModal() {
       type: "MODAL_CLOSE",
     });
   }, [ModalDispatch]);
+  const [ loading, setLoading ] = useState(true);
 
-    return (
+  useEffect(() => {
+    setLoading(false);
+  }, []);
+  
+  return loading ? (
+    <CTLoading />
+  ) : (
         <>
       {ModalState && (
         <Block>
           <ModalBlock data-aos="zoom-in"  data-aos-duration="500">
             <Back onClick={closeModal}>
-              <img src={BackButton} />
+              <img src={BackButton} alt="버튼"/>
             </Back>
             <Content>
               <Contents project={project} />
