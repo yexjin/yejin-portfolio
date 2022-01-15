@@ -5,15 +5,10 @@ import BigText from '../atoms/BannerBigText'
 import SmallText from '../atoms/BannerSmallText'
 import Button from '../atoms/BannerButton'
 import { Link } from 'react-scroll'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-
-AOS.init();
 
 
 const Box = styled.div`
 padding-top: 192px;
-margin: 0 0 0 200px;
 @media screen and (max-width: 1279px) {
     padding-top: 154px; 
     margin-left: 65px;
