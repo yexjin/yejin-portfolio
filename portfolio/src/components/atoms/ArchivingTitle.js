@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 const Title = styled.div`
 width: 87px;
-height: 33px;
 margin-bottom: 19px;
 
 font-family: Kanit-SemiBold;
@@ -12,6 +11,16 @@ font-size: 28px;
 line-height: 33px;
 
 color: #000000;
+@media screen and (max-width: 1279px) {
+    width: 72px;
+    font-size: 23px;
+    margin-bottom: 0px;
+  }
+@media screen and (max-width: 767px) {
+    width: 44px;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
 `
 
 function ArchivingTitle({children}) {
