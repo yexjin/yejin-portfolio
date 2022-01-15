@@ -15,6 +15,13 @@ const Title = styled.div`
   margin-top: -190px;
   visibility: hidden;
 
+  @media screen and (max-width: 1279px) {
+  width: 256px;
+  font-size: 1.4rem;
+  margin-top: -125px;
+}
+@media screen and (max-width: 767px) {
+}
 `
 const Host = styled.div`
   width: 460px;
@@ -30,22 +37,26 @@ const Host = styled.div`
   margin-top: -140px;
   visibility: hidden;
   font-family: Kanit-Medium;
+  @media screen and (max-width: 1279px) {
+  width: 256px;
+  font-size: 1.0rem;
+  margin-top: -90px;
+}
+@media screen and (max-width: 767px) {
+}
 `
 
 const Img = styled.div`
 cursor: pointer;
 width: 460px;
 height: 300px;
-
 filter: drop-shadow(4px 4px 4px rgba(0.25, 0.25, 0.25, 0.25));
 margin-bottom: 80px;
-
 img {
     width: 100%;
     height: 100%;
     opacity: 1;
   }
-
 :hover {
     img {
       opacity: 1;
@@ -60,7 +71,14 @@ img {
       transition: all 0.5s;
       visibility: visible;
     }
-  }
+}
+@media screen and (max-width: 1279px) {
+  width: 256px;
+  height: 177px;
+}
+@media screen and (max-width: 767px) {
+  margin-bottom: 40px;
+}
 
 `
 

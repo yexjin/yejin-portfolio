@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useMediaQuery } from "react-responsive";
+
 
 const Box = styled.div`
 width: 691px;
@@ -26,14 +28,28 @@ margin: 0 auto;
 }
 `
 
-function AboutMeText() {
-    return (
-        <Box data-aos="fade-up"  data-aos-duration="3000">
+function AboutMeText() { 
+    const isMobile = useMediaQuery({ query: " (max-width: 767px)" });
+
+    return( 
+        <>
+        {(!isMobile) && (
+            <Box data-aos="fade-up"  data-aos-duration="3000">
+                기획부터 개발까지 경험해봤으며, <br />
+                프론트엔드 개발 분야로 발을 넓히고 있는 중입니다 :) <br />
+                계속해서 공부해 나갈것이고 이 포트폴리오는 계속해서 업데이트 될 예정입니다 !
+            </Box>
+        )}
+        {isMobile && (
+            <Box data-aos="fade-up"  data-aos-duration="3000">
             기획부터 개발까지 경험해봤으며, <br />
             프론트엔드 개발 분야로 발을 넓히고 있는 중입니다 :) <br />
-            계속해서 도전해 나갈것이고 이 포트폴리오는 계속해서 업데이트 될 예정입니다 !
-        </Box>
-    )
+            계속해서 공부해 나갈것이고 <br />
+            이 포트폴리오는 계속해서 업데이트 될 예정입니다 !
+            </Box>   
+        )}
+        </>
+        )
 }
 
 export default AboutMeText

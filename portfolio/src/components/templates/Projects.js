@@ -9,6 +9,12 @@ height: 906px;
 
 background: #FFFFFF;
 padding-top: 40px;
+@media screen and (max-width: 1279px) {
+    height: 700px;
+}
+@media screen and (max-width: 767px) {
+    height: 630px;
+}
 `
 const SubText = styled.div`
 font-size: 17px;
@@ -19,6 +25,20 @@ font-style: normal;
 float: right;
 padding-top: 90px;
 margin-right: 300px;
+@media screen and (max-width: 1279px) {
+    font-size: 14px;
+    margin-right: 130px;
+    padding-top: 50px;
+}
+@media screen and (max-width: 767px) {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 auto;
+    float: unset;
+    width: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
 `
 
 function Projects() {

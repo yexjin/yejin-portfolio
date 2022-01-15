@@ -9,6 +9,13 @@ line-height: 29px;
 
 color: #8D8989;
 width: auto;
+@media screen and (max-width: 1279px) {
+    font-size: 20px;
+  }
+@media screen and (max-width: 767px) {
+    font-size: 15px;
+    margin-top: 20px;
+}
 `
 
 
