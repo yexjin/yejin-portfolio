@@ -23,14 +23,14 @@ margin-bottom: 50px;
 }
 `
 
-const types = ['프론트엔드 개발자', '더 많이 공부하고 싶은 개발자', '열정적인 개발자']
+const types = ['프론트엔드 개발자', '더 많이 공부하고 싶은', '열정적인 개발자']
 
 function BannerBigText() {
     return (
         <Text>
             <Typing 
                 text={types}
-                typeSpeed={100}
+                typeSpeed={200}
                 deleteSpeed={50}
                 disableBlinkingOnEnd={10}
                 blinkingSpeed={1000}

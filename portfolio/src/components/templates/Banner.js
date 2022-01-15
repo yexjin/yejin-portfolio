@@ -6,7 +6,7 @@ import CTLoading from '../organisms/CTLoading'
 
 const Box = styled.div`
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 height: 839px;
 margin-bottom: 79px;
 @media screen and (max-width: 1279px) {

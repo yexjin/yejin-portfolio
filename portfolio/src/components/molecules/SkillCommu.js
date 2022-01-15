@@ -6,6 +6,15 @@ const Names = styled.div`
 width: 600px;
 margin-left: 30px;
 display: flex;
+@media screen and (max-width: 1279px) {
+    width: 500px;
+    margin-left: 0px;
+  }
+@media screen and (max-width: 767px) {
+    margin-left: 3px;
+    font-size: 13px;
+    width: 300px;
+}
 `
 
 const Name = styled.div`
@@ -15,6 +24,18 @@ font-style: normal;
 font-size: 20px;
 line-height: 29px;
 margin-right: 40px;
+@media screen and (max-width: 1279px) {
+    margin-left: 25px;
+    font-size: 20px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+@media screen and (max-width: 767px) {
+    margin-left: 10px;
+    font-size: 13px;
+    line-height: 0px;
+    margin-top: 0px;
+}
 `
 
 const { communication } = Skills();

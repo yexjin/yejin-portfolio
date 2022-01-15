@@ -8,7 +8,7 @@ margin-top: 27px;
 `
 
 const Click = styled.button`
-width: 130px;
+width: 140px;
 font-family: Kanit-SemiBold;
 font-style: normal;
 font-size: 22px;

@@ -6,7 +6,7 @@ const Text = styled.div`
 width: 550px;
 height: 85px;
 
-font-family: Noto-Regular;
+font-family: Kanit-Regular;
 font-style: normal;
 font-size: 21px;
 line-height: 30px;

@@ -16,11 +16,11 @@ text-decoration: none;
 @media screen and (max-width: 1279px) {
     font-size: 18px;
     line-height: 20px;
-    margin-top: 20px;
+    margin-top: 32px;
   }
 @media screen and (max-width: 767px) {
     font-size: 17px;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 `
 

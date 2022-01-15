@@ -6,9 +6,15 @@ import Mail from '../molecules/ContactMail'
 
 const Box = styled.div`
 width: 404px;
-height: 183px;
 margin: 0 auto;
 margin-top: 49px;
+@media screen and (max-width: 1279px) {
+width: 300px;
+margin-top: 0px;
+}
+@media screen and (max-width: 767px) {
+    width: 200px;
+}
 
 `
 

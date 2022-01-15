@@ -10,6 +10,12 @@ height: 750px;
 
 background: #FFFFFF;
 padding-top: 40px;
+@media screen and (max-width: 1279px) {
+    height: 580px;
+  }
+@media screen and (max-width: 767px) {
+    height: 470px;
+}
 `
 
 function Archiving() {

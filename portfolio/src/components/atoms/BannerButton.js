@@ -7,7 +7,7 @@ cursor: pointer;
 width: 190px;
 height: 41px;
 padding-top: 8px;
-font-family: Noto-Bold;
+font-family: Kanit-Bold;
 font-style: normal;
 font-size: 21px;
 line-height: 25px;

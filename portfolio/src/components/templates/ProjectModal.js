@@ -38,22 +38,56 @@ const ModalBlock = styled.div`
     width: 0;
     height: 0;
   }
+  @media screen and (max-width: 1279px) {
+    width: 560px;
+    height: 417px;
+}
+@media screen and (max-width: 767px) {
+  width: 350px;
+height: 500px;
+}
 `;
 
 const Content = styled.div`
   width: 100%;
   margin-top: 100px;
   margin-bottom: 100px;
+  @media screen and (max-width: 1279px) {
+    margin-top: 57px;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  margin-top: 62px;
+    margin-bottom: 30px;
+}
 `;
 
 const Back = styled.button`
-  font-size: 15px;
   background: none;
   border: none;
   color: red;
   margin-top: 43px;
   margin-right: 55px;
   float: right;
+  @media screen and (max-width: 1279px) {
+  margin-top: 29px;
+  margin-right: 43px;
+  width: 36px;
+  height: 20px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  margin-right: 28px;
+  width: 40px;
+  height: 20px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
 `;
 
 const Command = styled.div`
@@ -66,6 +100,13 @@ margin-top: 30px;
 color: #3C3A3A;
 margin-bottom: 10px;
 float: right;
+@media screen and (max-width: 1279px) {
+  font-size: 10px;
+  margin-right: 43px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 767px) {
+}
 `
 
 
