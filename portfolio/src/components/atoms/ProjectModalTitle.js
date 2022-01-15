@@ -10,6 +10,13 @@ line-height: 15px;
 padding-top: 40px;
 
 color: #000000;
+@media screen and (max-width: 1279px) {
+    font-size: 20px;
+    padding-top: 10px;
+}
+@media screen and (max-width: 767px) {
+    font-size: 16px;
+}
 `
 
 function ProjectModalTitle({text}) {

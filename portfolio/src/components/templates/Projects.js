@@ -19,6 +19,20 @@ font-style: normal;
 float: right;
 padding-top: 90px;
 margin-right: 300px;
+@media screen and (max-width: 1279px) {
+    font-size: 14px;
+    margin-right: 130px;
+    padding-top: 50px;
+}
+@media screen and (max-width: 767px) {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 auto;
+    float: unset;
+    width: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
 `
 
 function Projects() {

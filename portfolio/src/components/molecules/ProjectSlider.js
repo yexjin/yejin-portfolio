@@ -10,12 +10,20 @@ import nextButton from '../../image/nextButton.png'
 import { Projects } from '../../data'
 import Box from '../atoms/ProjectBox'
 
+import { useMediaQuery } from "react-responsive";
+
 const Prev = styled.img`
 width: 50px;
 height: 50px;
 z-index: 5;
 margin-left: -40px;
 margin-top: -30px;
+@media screen and (max-width: 1279px) {
+width: 27px;
+height: 27px;
+}
+@media screen and (max-width: 767px) {
+}
 `
 
 const Next = styled.img`
@@ -24,12 +32,19 @@ height: 50px;
 z-index: 5;
 margin-right: -40px;
 margin-top: -30px;
+@media screen and (max-width: 1279px) {
+    width: 27px;
+    height: 27px;
+}
+@media screen and (max-width: 767px) {
+}
 `
 
 function ProjectSlider() {
 
     const { list } = Projects();
-    
+
+    const isMobile = useMediaQuery({ query: " (max-width: 767px)" });
     
     const PrevArrow=({currentSlide,slideCount,...props})=>(
         <Prev {...props} src={prevButton} className="slick-prev" /> 
@@ -48,16 +63,38 @@ function ProjectSlider() {
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,	
       };
+    
+    const settingsMobile = {
+        dots: true, // 캐러셀이미지가 몇번째인지 알려주는 점을 보여줄지 정한다.
+        infinite: true, // loop를 만들지(마지막 이미지-처음 이미지-중간 이미지들-마지막 이미지)
+        speed: 500, // 애미메이션의 속도, 단위는 milliseconds
+        slidesToShow: 1, // 한번에 몇개의 슬라이드를 보여줄 지
+        slidesToScroll: 1, // 한번 스크롤시 몇장의 슬라이드를 넘길지
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+    }
 
     return (
-        <Slider {...settings}>
-            
+        <>
+        {(!isMobile) && (
+            <Slider {...settings}>      
                 {list.map((project) => {             
                     return (<div>
                     <Box key={project.id} item={project} />
                     </div>)
                 })}
-        </Slider>
+            </Slider>
+        )}
+        { isMobile && (
+            <Slider {...settingsMobile}>      
+            {list.map((project) => {             
+                return (<div>
+                <Box key={project.id} item={project} />
+                </div>)
+            })}
+            </Slider>
+        )}
+        </>
     )
 }
 
