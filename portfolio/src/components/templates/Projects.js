@@ -9,6 +9,12 @@ height: 906px;
 
 background: #FFFFFF;
 padding-top: 40px;
+@media screen and (max-width: 1279px) {
+    height: 700px;
+}
+@media screen and (max-width: 767px) {
+    height: 630px;
+}
 `
 const SubText = styled.div`
 font-size: 17px;
