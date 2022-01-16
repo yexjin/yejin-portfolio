@@ -62,7 +62,8 @@ const Content = styled.div`
 }
 `;
 
-const Back = styled.button`
+const Back = styled.div`
+cursor: pointer;
   background: none;
   border: none;
   color: red;
@@ -72,7 +73,7 @@ const Back = styled.button`
   @media screen and (max-width: 1279px) {
   margin-top: 29px;
   margin-right: 43px;
-  width: 36px;
+  width: 26px;
   height: 20px;
   img{
     width: 100%;
@@ -81,7 +82,7 @@ const Back = styled.button`
 }
 @media screen and (max-width: 767px) {
   margin-right: 28px;
-  width: 33px;
+  width: 23px;
   height: 17px;
   img{
     width: 100%;

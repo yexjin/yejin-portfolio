@@ -11,7 +11,7 @@ const Box = styled.div`
 padding-top: 192px;
 @media screen and (max-width: 1279px) {
     padding-top: 154px; 
-    margin-left: 65px;
+    margin-left: 30px;
   }
 @media screen and (max-width: 767px) {
     padding-top: 146px;

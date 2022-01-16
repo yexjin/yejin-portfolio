@@ -8,14 +8,11 @@ import { useMediaQuery } from "react-responsive";
 const Box = styled.div`
 display: flex;
 justify-content: space-evenly;
-height: 839px;
 margin-bottom: 79px;
 @media screen and (max-width: 1279px) {
-    height: 500px;
     margin-bottom: 104px;
   }
 @media screen and (max-width: 767px) {
-    height: 500px;
 }
 `
 

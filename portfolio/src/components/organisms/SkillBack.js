@@ -25,12 +25,12 @@ function SkillBack() {
             </Flex>
         )}
         {isMobile && (
-            <>
+            <div data-aos="fade-up"  data-aos-duration="1000">
             <Title children="Back-end"/>
             <div>
                 <Back />
             </div>
-            </>
+            </div>
         )
 
         }
