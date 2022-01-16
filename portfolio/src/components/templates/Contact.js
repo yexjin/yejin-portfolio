@@ -102,7 +102,7 @@ function Contact() {
             </TitleBox>
             <ContactBox />
             <Bar />
-            <Footer>OYEJIN © 2022PORTFOLIO</Footer>
+            <Footer>Copyright © 2022 OYEJINPORTFOLIO</Footer>
         </Box>
     )
 }
