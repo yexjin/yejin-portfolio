@@ -15,7 +15,7 @@ padding-top: 192px;
   }
 @media screen and (max-width: 767px) {
     padding-top: 146px;
-    margin-left: 40px;
+    margin-left: 23px;
 }
 `
 
