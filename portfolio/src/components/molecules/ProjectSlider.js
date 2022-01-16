@@ -23,6 +23,7 @@ width: 27px;
 height: 27px;
 }
 @media screen and (max-width: 767px) {
+    margin-left: -20px;
 }
 `
 
@@ -37,6 +38,7 @@ margin-top: -30px;
     height: 27px;
 }
 @media screen and (max-width: 767px) {
+    margin-right: -20px;
 }
 `
 
