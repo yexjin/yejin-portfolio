@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Text from '../molecules/BannerText'
 import Image from '../molecules/BannerImages'
 import CTLoading from '../organisms/CTLoading'
+import { useMediaQuery } from "react-responsive";
 
 const Box = styled.div`
 display: flex;
@@ -19,6 +20,9 @@ margin-bottom: 79px;
 `
 
 function Banner() {
+
+  const isMobile = useMediaQuery({ query: " (max-width: 767px)" });
+
     const [ loading, setLoading ] = useState(true);
 
   useEffect(() => {
@@ -29,8 +33,17 @@ function Banner() {
     <CTLoading />
   ) : (
         <Box>
-         <Text />
-         <Image />   
+          {(!isMobile) && (
+            <>
+            <Text />
+            <Image />   
+            </>
+          )}
+          {isMobile && (
+            <>
+            <Text />
+            </>
+          )}
         </Box>
     )
 }

@@ -81,8 +81,8 @@ const Back = styled.button`
 }
 @media screen and (max-width: 767px) {
   margin-right: 28px;
-  width: 40px;
-  height: 20px;
+  width: 33px;
+  height: 17px;
   img{
     width: 100%;
     height: 100%;
