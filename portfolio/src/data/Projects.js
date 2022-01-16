@@ -92,6 +92,27 @@ const Projects = () => {
                 b: ' React, Redux 기술을 사용하는 것이 익숙해있었을 때였으므로 사용자가 색다른 느낌을 얻을 수 있는 애니메이션과 디자인에 충족하는 프론트개발에 힘을 다했습니다. ( 개인적으로 가장 애니메이션과 디자인이 마음에 드는 작품 :) )',
                 c: ' 학기 중에 2인 프로젝트로 한달만에 준비를 해야하는 거라 부담감이 있었지만 최선을 다했던, 만족스러운 결과를 얻은 프로젝트입니다.',
             }]
+        },
+        {
+            id: 5,
+            title: 'Portfolio',
+            host: '포트폴리오 사이트',
+            subtitle: '오예진의 포트폴리오 사이트',
+            image: 'img/projects/Pf.png',
+            detailImg: 'img/projects/PfDetail.png',
+            term: '2022.1 ~ ing',
+            part: '기획, 디자인, 개발',
+            github: 'https://github.com/yexjin/yejin-portfolio',
+            skills: [{
+                a: '• React 사용',
+                b: '• ContextApi를 통한 상태관리',
+                c: '• Material UI로 모바일, 태블릿, PC버전 반응형 구현',
+            }],
+            description: [{
+                a: ' 해당 사이트인 2022년 저의 첫 포트폴리오 사이트입니다.',
+                b: ' 지난 2021년 열심히 사용해왔던 React 프레임워크를 사용하여 개발을 완료했습니다.',
+                c: ' 프로젝트와 기술 등의 내용추가와 사이트의 최적화 관리를 시간이 날때마다 틈틈이 진행할 예정입니다.',
+            }]
         }
     ]
     return {
