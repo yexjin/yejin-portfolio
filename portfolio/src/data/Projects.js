@@ -113,6 +113,28 @@ const Projects = () => {
                 b: ' 지난 2021년 열심히 사용해왔던 React 프레임워크를 사용하여 개발을 완료했습니다.',
                 c: ' 프로젝트와 기술 등의 내용추가와 사이트의 최적화 관리를 시간이 날때마다 틈틈이 진행할 예정입니다.',
             }]
+        },
+        {
+            id: 6,
+            title: 'Surfee',
+            host: '노코드 랜딩페이지 제작 툴',
+            subtitle: '노코드 랜딩페이지 제작 툴',
+            image: 'img/projects/Surfee.png',
+            detailImg: 'img/projects/SurfeeDetail.png',
+            term: '2022.2 ~ 2022.3',
+            part: '프론트엔드 개발 담당',
+            github: 'https://github.com/thxxx/kiwi',
+            url: 'https://surfee.co.kr',
+            skills: [{
+                a: '• React 사용',
+                b: '• ContextApi를 통한 상태관리',
+                c: '• 모바일, PC버전 반응형 구현',
+            }],
+            description: [{
+                a: ' 대학생 4명으로 이루어진 스타트업에서 개발자로 일하며 완성한 1차 MVP 서비스입니다.',
+                b: ' 30% 정도 구현이 되어있던 서비스의 마무리를 책임졌으며 2월 23일 서비스 런칭과 이후 몇 주간의 보완작업에 참여했습니다.',
+                c: ' 다른 개발자와의 소통, 보기 쉬운 폴더 구성과 깔끔한 코드, 스타트업의 현장 경험 등 많은 것을 배울 수 있었습니다.',
+            }]
         }
     ]
     return {

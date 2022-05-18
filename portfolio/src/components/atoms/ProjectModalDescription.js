@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import GitHub from '../../image/githubBig.png'
 import Youtube from '../../image/youtube.png'
+import Url from '../../image/url.png'
 
 const Title = styled.div`
 width: 326px;
@@ -113,7 +114,17 @@ function ProjectModalDescription({project}) {
         </SubText>
         <SubText>
             {project.part}
-        </SubText>      
+        </SubText>  
+        {
+            project.url && (
+                <>
+                <br />
+            <Link href={project.url} target="_blank" rel="noreferrer">
+               <Img src={Url} alt="url 링크"/> &nbsp; ⬅ 사이트 보러가기!
+            </Link>
+            </>
+            )
+        }    
         {project.skills.map(skill => (
             <SkillBox>
             <Skills>
@@ -136,6 +147,7 @@ function ProjectModalDescription({project}) {
         <Link href={project.github} target="_blank" rel="noreferrer">
         <Img src={GitHub} alt="Github링크"/> &nbsp; ⬅ 클릭!
         </Link>
+        
         {
             project.video && (
                 <>
