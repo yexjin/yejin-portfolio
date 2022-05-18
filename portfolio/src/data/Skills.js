@@ -1,6 +1,6 @@
 const Skills = () => {
 
-    const front = [
+    const web_front = [
         {
             id: 1,
             name: 'html',
@@ -26,6 +26,23 @@ const Skills = () => {
             name: 'Redux',
             progress: 70,
         },
+    ]
+    const mob_front = [
+        {
+            id: 1,
+            name: 'Swift',
+            progress: 80,
+        },
+        {
+            id: 2,
+            name: 'SwiftUI',
+            progress: 40,
+        },
+        {
+            id: 3,
+            name: 'UIKit',
+            progress: 40,
+        }
     ]
     const back = [
         {
@@ -76,7 +93,7 @@ const Skills = () => {
         }
     ]
     return{
-        front, back, tool, communication
+        web_front, mob_front, back, tool, communication
     }
 }
 

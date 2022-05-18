@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../atoms/SkillTitle'
-import Front from '../molecules/SkillFront'
+import {SkillWebFront, SkillMobileFront} from '../molecules/SkillFront'
 import styled from 'styled-components'
 import { useMediaQuery } from "react-responsive";
 
@@ -17,20 +17,37 @@ function SkillFront() {
     return (
         <>
         {(!isMobile) && (
+            <>
             <Flex data-aos="fade-up"  data-aos-duration="1000">
-                <Title children="Front-end"/>
+                <Title children="Web Front-end"/>
                 <div>
-                    <Front />
+                    <SkillWebFront />
                 </div>
             </Flex>
+            <>&nbsp;</>
+            <Flex data-aos="fade-up"  data-aos-duration="1000">
+            <Title children="Mobile Front-end"/>
+            <div>
+                <SkillMobileFront />
+            </div>
+            </Flex>
+            </>
         )}
         {isMobile && (
-            <div data-aos="fade-up"  data-aos-duration="1000">
-            <Title children="Front-end"/>
-            <div>
-                <Front />
-            </div>
-            </div>
+            <>
+                <div data-aos="fade-up"  data-aos-duration="1000">
+                    <Title children="Web Front-end"/>
+                    <div>
+                        <SkillWebFront />
+                    </div>
+                </div>
+                <div data-aos="fade-up"  data-aos-duration="1000">
+                    <Title children="Mobile Front-end"/>
+                    <div>
+                        <SkillMobileFront />
+                    </div>
+                </div>
+            </>
         )}
         </>
     )

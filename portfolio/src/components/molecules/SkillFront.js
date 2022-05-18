@@ -57,19 +57,19 @@ margin-bottom: 18px;
 }
 `
 
-const { front } = Skills();
+const { web_front, mob_front } = Skills();
 
-function SkillFront() {
+function SkillWebFront() {
 
     return (
         <Flex> <div> 
-        {front.map(skill=>{
+        {web_front.map(skill=>{
             return(<Name>
                 {skill.name}
                 </Name>)
         })}</div>
         <div>
-            {front.map(skill=>{
+            {web_front.map(skill=>{
                 return(<ProgressBox>
                     <Progress
                         animated
@@ -82,7 +82,7 @@ function SkillFront() {
         </div>
         <div>
             <div>
-                {front.map(skill=>{
+                {web_front.map(skill=>{
                     return(<Percent>
                         {skill.progress}%
                     </Percent>)
@@ -93,4 +93,36 @@ function SkillFront() {
     )
 }
 
-export default SkillFront
+function SkillMobileFront() {
+
+    return (
+        <Flex> <div> 
+        {mob_front.map(skill=>{
+            return(<Name>
+                {skill.name}
+                </Name>)
+        })}</div>
+        <div>
+            {mob_front.map(skill=>{
+                return(<ProgressBox>
+                    <Progress
+                        animated
+                        color="dark"
+                        striped
+                        value={skill.progress}
+                    />
+                </ProgressBox>)
+            })}
+        </div>
+        <div>
+                {mob_front.map(skill=>{
+                    return(<Percent>
+                        {skill.progress}%
+                    </Percent>)
+                })}
+            </div>
+        </Flex>
+    )
+}
+
+export {SkillWebFront, SkillMobileFront}
