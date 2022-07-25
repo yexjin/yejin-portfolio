@@ -96,6 +96,21 @@ const activities = [
         year: '2021',
         title: '2021 한이음 공모전 입선'
     },
+    {
+        id: 7,
+        year: '2022',
+        title: 'Surfee 스타트업 FE 개발'
+    },
+    {
+        id: 8,
+        year: '2022',
+        title: '정보처리기사 취득'
+    },
+    {
+        id: 9,
+        year: '2022',
+        title: 'AUSG 6기'
+    },
 ]
 
 function MyActivity() {
