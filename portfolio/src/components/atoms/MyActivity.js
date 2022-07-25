@@ -109,7 +109,7 @@ const activities = [
     {
         id: 9,
         year: '2022',
-        title: 'AUSG 6기'
+        title: 'AUSG 6기 활동중'
     },
 ]
 
@@ -151,6 +151,20 @@ function MyActivity() {
             <Values>
             {activities.map(activity=>(
                 activity.year === '2021' && (
+                        <Value>
+                            {activity.title}
+                        </Value>
+                )
+                ))}
+            </Values>
+        </Flex>
+        <Flex>
+            <Items>
+                <Item>2022</Item>
+            </Items>
+            <Values>
+            {activities.map(activity=>(
+                activity.year === '2022' && (
                         <Value>
                             {activity.title}
                         </Value>

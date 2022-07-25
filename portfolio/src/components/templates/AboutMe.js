@@ -38,7 +38,7 @@ height: 6px;
 
 background: #FBA2A2;
 margin: 0 auto;
-margin-top: 20px;
+margin-top: 120px;
 margin-bottom: 30px;
 @media screen and (max-width: 1279px) {
     width: 205px;
